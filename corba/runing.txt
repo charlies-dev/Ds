@@ -1,0 +1,18 @@
+idlj -fall StringReverser.idl
+
+
+javac StringReverserApp/*.java Server.java StringReverserImpl.java Client.java
+
+
+tnameserv -ORBInitialPort 1050
+
+
+java Server -ORBInitialPort 1050 -ORBInitialHost localhost
+
+#same machine
+java Client -ORBInitialPort 1050 -ORBInitialHost localhost
+
+
+javac StringReverserApp/*.java Client.java
+java Client -ORBInitialPort 1050 -ORBInitialHost <Server_IP_Address>
+

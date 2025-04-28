@@ -1,0 +1,5 @@
+module StringReverserApp {
+  interface StringReverser {
+    string reverse_string(in string input_str);
+  };
+};
