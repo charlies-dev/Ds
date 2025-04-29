@@ -1,0 +1,8 @@
+rmiregistry 1099
+
+
+Console B
+
+
+java AdditionServer
+java AdditionClient

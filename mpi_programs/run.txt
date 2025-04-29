@@ -1,0 +1,3 @@
+javac -cp "$MPJ_HOME/lib/mpj.jar" IntermediateSum.java
+
+mpjrun.sh -np 2 -cp . IntermediateSum
